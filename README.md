@@ -148,6 +148,50 @@ Timing anlaysis is performed by providing the SDC contraints
 
 ![image](https://user-images.githubusercontent.com/43933912/160259506-93d2103c-7de9-465e-bce6-d7738461d255.png)
 
+## Day 4
+## Introduction to SOFA FPGA Fabric IP
+
+
+![l4_1](https://user-images.githubusercontent.com/43933912/160259586-e445abed-672b-4e40-bf3d-08ab8faf7450.PNG)
+
+
+![l4_2](https://user-images.githubusercontent.com/43933912/160259609-c834a48b-aa38-4533-83c6-2cdb1fad9820.PNG)
+
+
+![l4_3](https://user-images.githubusercontent.com/43933912/160259620-be522ee0-6fde-4b19-9c6a-738ca183416d.PNG)
+
+
+![l4_4](https://user-images.githubusercontent.com/43933912/160259625-f2107683-e3e9-416d-92b3-22cd5fa09f0e.PNG)
+
+
+![l4_5](https://user-images.githubusercontent.com/43933912/160259629-2575c63a-20b9-4249-82d5-6eb1f05922ce.PNG)
+
+
+![l4_6_utilization](https://user-images.githubusercontent.com/43933912/160259641-e58d045e-2f26-4645-9e98-15b693136e83.PNG)
+
+
+![l4_7](https://user-images.githubusercontent.com/43933912/160259647-74edf9ba-20de-424f-86a2-01855295fc32.PNG)
+
+
+![l4_8](https://user-images.githubusercontent.com/43933912/160259655-25ea3080-cfda-4294-ab22-ef8780c0b4da.PNG)
+
+
+![l4_9](https://user-images.githubusercontent.com/43933912/160259666-fc0afb2e-3ed3-4068-81bb-ba13d746a533.PNG)
+
+
+![l4_10_timing](https://user-images.githubusercontent.com/43933912/160259670-8b004ba8-aa47-449a-9ea1-d4615964d223.PNG)
+
+
+![l4_11_hold](https://user-images.githubusercontent.com/43933912/160259679-e15eaaaf-7fa1-4994-bc13-679a0b28b047.PNG)
+
+
+![l4_12](https://user-images.githubusercontent.com/43933912/160259687-235c0990-7d0f-4f1c-8df0-34295d44d537.PNG)
+
+
+![l4_13](https://user-images.githubusercontent.com/43933912/160259690-0a78c0b2-ec00-40fe-be93-c902895cd23a.PNG)
+
+
+
 
 
 
