@@ -191,6 +191,9 @@ Timing anlaysis is performed by providing the SDC contraints
 ![l4_13](https://user-images.githubusercontent.com/43933912/160259690-0a78c0b2-ec00-40fe-be93-c902895cd23a.PNG)
 
 
+![l4_14_post_simulation](https://user-images.githubusercontent.com/43933912/160259771-b6c9a506-c97b-4df9-aac2-b71d28b1031b.PNG)
+
+
 
 
 
