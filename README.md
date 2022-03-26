@@ -57,6 +57,7 @@ $VTR_ROOT/vpr/vpr \
 ![image](https://user-images.githubusercontent.com/43933912/160256189-08941d57-ae88-400e-aeed-b4e76fad15f3.png)
 
 placemnt of blocks  on gui 
+
 ![image](https://user-images.githubusercontent.com/43933912/160256536-87b1e982-4b5e-4b83-b801-e9555c725a49.png)
 
 There multiple options here in the GUI e.g. toggle nets 
