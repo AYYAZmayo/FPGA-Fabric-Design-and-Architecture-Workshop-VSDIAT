@@ -97,16 +97,59 @@ VPR flow running in GUI performs the placment and routing
 ![image](https://user-images.githubusercontent.com/43933912/160258359-5c9f5ec0-410f-4c27-a37b-7631016e9b22.png)
 
 Post sythesis simulation is performed on the counter using VIVADO. Following command is used to generate postsyhtnesis netlist
+
 ![image](https://user-images.githubusercontent.com/43933912/160258633-5e854210-b238-4257-b249-703c29b83017.png)
 
 Timing Analysis
+
 ![image](https://user-images.githubusercontent.com/43933912/160258922-8ddb3ed5-f6f0-43de-94c6-ea24525a2a72.png)
-
-
 
 
 Timing anlaysis is performed by providing the SDC contraints
 
+## Day 3
+## RVMyth Core RTL to Synthesis on VIVADO
+•	This core has several modules the main module is Core which has 3 inputs called clk, reset and output that is of 8 bits.
+•	This adds the first 9 numbers and gives an output of 45 
+•	The code is given here in RISCV Instructions based assembly code
+
+![f1](https://user-images.githubusercontent.com/43933912/160259221-8f014e07-78aa-4382-abf1-1dcfd6c47da0.PNG)
+
+•	These instructions are saved in the instruction memory as binary format as shown in below figure. It is a five stage pipelined processor in which the fetch unit fetches these instructions one by one then the decode unit decodes them and the execution unit or ALU performs the execution of these instructions and access the memory and at the end write back is performed.
+
+![f2](https://user-images.githubusercontent.com/43933912/160259336-c09679df-7c29-4f3a-b0a3-7e5df65ee382.PNG)
+ 
+•	Create a simple test-bench for testing the core present in the Code folder as test.v
+
+![f3](https://user-images.githubusercontent.com/43933912/160259349-99664dca-6b04-4690-8991-aaee375cdefe.PNG)
+
+•	Now simulate the Core in VIVADO by creating a new project and selecting baysis 3 as the Board. Add the main file myth_test.v  in design sources section and testbench file in sources section.
+
+![f4](https://user-images.githubusercontent.com/43933912/160259368-bb2e89c6-1b5f-4dd6-a882-0030c3145574.PNG)
+
+•	Now perform Behavioral simulation for the design as shown in the below waveform.  It shows the required output as we are expecting the sum of first 9 numbers as 45.
+
+![f5](https://user-images.githubusercontent.com/43933912/160259384-f9d7126c-6dc0-4ec6-baa4-a7847d802955.PNG)
+
+•	Now elaborating the design. Once the elaboration is done open the IO planning and assign the W5 clock of 100MHz of Baysis 3 Board to "clk" of the core and also assign the "reset" to a switch R2. And also set the IO standar as LVCMOS33. Here I don’t  assign “out”  to LEDs rather I observe it on ILA.
+
+![f6](https://user-images.githubusercontent.com/43933912/160259450-eee88a70-6989-445c-8676-aa788588daa9.PNG)
+
+•	For observing the output on ILA I have to remove “out” port from the module definition and perform the elaboration again and now in the IO planning only the clk and reset will appear.
+•	Before performing the synthesis we also add the timing constraints of 100 MHz using the constraint wizard in synthesis column. Below is the utilization summary of the synthesized design
+
+![f7](https://user-images.githubusercontent.com/43933912/160259469-4060a7cd-1339-41fe-818c-4c3bf0fe22c9.PNG)
+
+•	Now perform Implementation and final implemented design after place and route
+
+![image](https://user-images.githubusercontent.com/43933912/160259498-532e5968-6e17-450c-97fe-1960b1b6c120.png)
+
+•	The final timing summary of the MYTH core is obtained as
+
+![image](https://user-images.githubusercontent.com/43933912/160259506-93d2103c-7de9-465e-bce6-d7738461d255.png)
 
 
-## compare results
+
+
+
+
