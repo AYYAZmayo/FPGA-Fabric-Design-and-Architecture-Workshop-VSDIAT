@@ -1,4 +1,4 @@
-# FPGA-Fabric-Design-and-Archtecture-Workshop-VSDIAT
+# FPGA-Fabric-Design-and-Architecture-Workshop-VSDIAT
 ## Introduction to FPGA Architecture
 ## Day 1
 ## 4 bit Counter Implementation on Baysis 3 Board using VIVADO
