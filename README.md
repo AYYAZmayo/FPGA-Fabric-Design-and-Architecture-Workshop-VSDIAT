@@ -178,7 +178,7 @@ Resource utilization of counter
 
 ![l4_6_utilization](https://user-images.githubusercontent.com/43933912/160259641-e58d045e-2f26-4645-9e98-15b693136e83.PNG)
 
-SDC contraints for Timing analsis
+SDC contraints for Timing analysis
 
 ![l4_7](https://user-images.githubusercontent.com/43933912/160259647-74edf9ba-20de-424f-86a2-01855295fc32.PNG)
 
@@ -206,7 +206,7 @@ Post implenentation netlist
 
 ![l4_13](https://user-images.githubusercontent.com/43933912/160259690-0a78c0b2-ec00-40fe-be93-c902895cd23a.PNG)
 
-Functional simulation wavform for fourbit counter 
+Functional simulation wavform for four bit counter 
 
 ![l4_14_post_simulation](https://user-images.githubusercontent.com/43933912/160259771-b6c9a506-c97b-4df9-aac2-b71d28b1031b.PNG)
 
