@@ -222,9 +222,17 @@ VPR also provides the detailed about the logic elements in VPR_stdout.log
 ## Timing analysis of RVMyth
 Upon providing the sdc constraints to VPR it generates the step and hold reports for the RVMyth core. Following command is provided in the generate_testbench.openfpga for the timing analysis.
 
-![Uploading d5_area_timing_commands.png…]()
+![d5_area_timing_commands](https://user-images.githubusercontent.com/43933912/160336387-2409f5d6-8efe-45d1-9733-c2202b7af5fc.png)
 
 RVmyth is constrained by providing the a period of 200ns. The sdc are given below:
+
+![d5_sdc_constraints](https://user-images.githubusercontent.com/43933912/160336429-517e0beb-35bb-4376-bdd2-8a0f50db1864.png)
+
+The VPR generated Setup report 
+
+![d5_setup_p1](https://user-images.githubusercontent.com/43933912/160336514-f6375f30-dbbe-4ed0-aa8b-34fc83c055e9.png)
+
+![d5_setup_p2](https://user-images.githubusercontent.com/43933912/160336565-efd7db73-e336-4550-88cf-bcdef93fef4a.png)
 
 
 
