@@ -231,7 +231,6 @@ RVmyth is constrained by providing the a period of 200ns. The sdc are given belo
 The VPR generated Setup report 
 
 ![d5_setup_p1](https://user-images.githubusercontent.com/43933912/160336514-f6375f30-dbbe-4ed0-aa8b-34fc83c055e9.png)
-
 ![d5_setup_p2](https://user-images.githubusercontent.com/43933912/160336565-efd7db73-e336-4550-88cf-bcdef93fef4a.png)
 
 
