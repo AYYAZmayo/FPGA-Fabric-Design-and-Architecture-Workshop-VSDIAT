@@ -193,10 +193,38 @@ Timing anlaysis is performed by providing the SDC contraints
 
 ![l4_14_post_simulation](https://user-images.githubusercontent.com/43933912/160259771-b6c9a506-c97b-4df9-aac2-b71d28b1031b.PNG)
 
+## Day 5
+## RVMyth Implementation on SOFA
+Use following command in generate_testbench.openfpga
 
+![d5_2](https://user-images.githubusercontent.com/43933912/160334347-c4617c02-f76f-437e-81b0-47848d34fca0.png)
 
+After running " make runOpenFPGA" the successful run is shown below
 
+![d5_1](https://user-images.githubusercontent.com/43933912/160334140-c7600520-9973-48a2-8fc1-31d1a0431ff6.png)
 
+The VPR_stdout.log will also show the status of run 
+
+![d5_3](https://user-images.githubusercontent.com/43933912/160334618-8376c4d6-0e55-4c95-b42f-34509dd47468.png)
+## Area Report of RVMyth 
+VPR provides the area results 
+
+![d5_stat_result](https://user-images.githubusercontent.com/43933912/160335243-7ee90303-36d4-4bb7-a48e-bd90c3bd230f.png)
+
+VPR provides the detailed resource utilization of LUTs, flipflops etc. and logic elements in VPR_stdout.log
+
+![d5_utilization](https://user-images.githubusercontent.com/43933912/160335330-e8c3539c-eb2f-40e9-91fd-e1ef8f1fae24.png)
+
+VPR also provides the detailed about the logic elements in VPR_stdout.log 
+
+![d5_Logicelements](https://user-images.githubusercontent.com/43933912/160335463-836b89ba-ecd3-463b-8c5d-ac76244b86c5.png)
+
+## Timing analysis of RVMyth
+Upon providing the sdc constraints to VPR it generates the step and hold reports for the RVMyth core. Following command is provided in the generate_testbench.openfpga for the timing analysis.
+
+![Uploading d5_area_timing_commands.png…]()
+
+RVmyth is constrained by providing the a period of 200ns. The sdc are given below:
 
 
 
