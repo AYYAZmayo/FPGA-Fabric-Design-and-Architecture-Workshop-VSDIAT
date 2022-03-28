@@ -151,16 +151,22 @@ Timing anlaysis is performed by providing the SDC contraints
 
 ## Day 4
 ## Introduction to SOFA FPGA Fabric IP
-
-
-![l4_1](https://user-images.githubusercontent.com/43933912/160259586-e445abed-672b-4e40-bf3d-08ab8faf7450.PNG)
-
+SOFA(Skywater OpenSource FPGAs) consists of a series of opensource FPGA-IPs using the opensource 130nm PDK.
+To run the SOFA framwork its repo is clone and installed. There are multiple FPGA IPs are presnt in the SOFA such as:
+. FPGA1212_SOFA_CHD_PNR
+. FPGA1212_QLSOFA_HD_PNR
+. FPGA1212_SOFA_HD_PNR
+For smaller benchmark designs such as counter, here we use FPGA1212_QLSOFA_HD_PNR IP. To include the counter design first we need to add our custom four bit counter (verilog file) in FPGA1212_QLSOFA_HD_task/Bechmark directory.
 
 ![l4_2](https://user-images.githubusercontent.com/43933912/160259609-c834a48b-aa38-4533-83c6-2cdb1fad9820.PNG)
+![l4_3](https://user-images.githubusercontent.com/43933912/160259620-be522ee0-6fde-4b19-9c6a-738ca183416d.PNG) 
+ 
+Then we need to modify the "FPGA1212_QLSOFA_HD_task/config/task_simulation.conf" file as shown below:
 
+   
+![l4_1](https://user-images.githubusercontent.com/43933912/160259586-e445abed-672b-4e40-bf3d-08ab8faf7450.PNG)
 
-![l4_3](https://user-images.githubusercontent.com/43933912/160259620-be522ee0-6fde-4b19-9c6a-738ca183416d.PNG)
-
+For running the SOFA flow we need to go back to SOFA/FOGA1212_SOFA_HD_PNR/ directory and run command "make runOpenFPGA" 
 
 ![l4_4](https://user-images.githubusercontent.com/43933912/160259625-f2107683-e3e9-416d-92b3-22cd5fa09f0e.PNG)
 
