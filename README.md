@@ -152,10 +152,10 @@ Timing anlaysis is performed by providing the SDC contraints
 ## Day 4
 ## Introduction to SOFA FPGA Fabric IP
 SOFA(Skywater OpenSource FPGAs) consists of a series of opensource FPGA-IPs using the opensource 130nm PDK.
-To run the SOFA framwork its repo is clone and installed. There are multiple FPGA IPs are presnt in the SOFA such as:
-. FPGA1212_SOFA_CHD_PNR
-. FPGA1212_QLSOFA_HD_PNR
-. FPGA1212_SOFA_HD_PNR
+To run the SOFA framwork its repo is clone and installed. There are multiple FPGA IPs are present in the SOFA such as:<br/>
+. FPGA1212_SOFA_CHD_PNR <br/>
+. FPGA1212_QLSOFA_HD_PNR <br/>
+. FPGA1212_SOFA_HD_PNR <br/>
 For smaller benchmark designs such as counter, here we use FPGA1212_QLSOFA_HD_PNR IP. To include the counter design first we need to add our custom four bit counter (verilog file) in FPGA1212_QLSOFA_HD_task/Bechmark directory.
 
 ![l4_2](https://user-images.githubusercontent.com/43933912/160259609-c834a48b-aa38-4533-83c6-2cdb1fad9820.PNG)
@@ -170,33 +170,43 @@ For running the SOFA flow we need to go back to SOFA/FOGA1212_SOFA_HD_PNR/ direc
 
 ![l4_4](https://user-images.githubusercontent.com/43933912/160259625-f2107683-e3e9-416d-92b3-22cd5fa09f0e.PNG)
 
+This will number files in the following directory 
 
 ![l4_5](https://user-images.githubusercontent.com/43933912/160259629-2575c63a-20b9-4249-82d5-6eb1f05922ce.PNG)
 
+Resource utilization of counter
 
 ![l4_6_utilization](https://user-images.githubusercontent.com/43933912/160259641-e58d045e-2f26-4645-9e98-15b693136e83.PNG)
 
+SDC contraints for Timing analsis
 
 ![l4_7](https://user-images.githubusercontent.com/43933912/160259647-74edf9ba-20de-424f-86a2-01855295fc32.PNG)
 
+Command added used to run timing analysis for VPR flow
 
 ![l4_8](https://user-images.githubusercontent.com/43933912/160259655-25ea3080-cfda-4294-ab22-ef8780c0b4da.PNG)
 
+Run the SOFA flow again after providing the SDC file
 
 ![l4_9](https://user-images.githubusercontent.com/43933912/160259666-fc0afb2e-3ed3-4068-81bb-ba13d746a533.PNG)
 
+Setup report for 4 bit counter 
 
 ![l4_10_timing](https://user-images.githubusercontent.com/43933912/160259670-8b004ba8-aa47-449a-9ea1-d4615964d223.PNG)
 
+Hold report for 4 bit counter
 
 ![l4_11_hold](https://user-images.githubusercontent.com/43933912/160259679-e15eaaaf-7fa1-4994-bc13-679a0b28b047.PNG)
 
+Generated the post implementation netlist for functional simulation
 
 ![l4_12](https://user-images.githubusercontent.com/43933912/160259687-235c0990-7d0f-4f1c-8df0-34295d44d537.PNG)
 
+Post implenentation netlist
 
 ![l4_13](https://user-images.githubusercontent.com/43933912/160259690-0a78c0b2-ec00-40fe-be93-c902895cd23a.PNG)
 
+Functional simulation wavform for fourbit counter 
 
 ![l4_14_post_simulation](https://user-images.githubusercontent.com/43933912/160259771-b6c9a506-c97b-4df9-aac2-b71d28b1031b.PNG)
 
